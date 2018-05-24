@@ -1,6 +1,6 @@
-package aggregateOperationsOracle;
+package newp;
 
-public class qqq4 {
+public class qqq6 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

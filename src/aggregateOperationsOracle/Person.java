@@ -60,8 +60,17 @@ public class Person {
     public static int compareByAge(Person a, Person b) {
         return a.birthday.compareTo(b.birthday);
     }
+    
+    
+    
 
-    public static List<Person> createRoster() {
+    @Override
+	public String toString() {
+		return "Person [name=" + name + ", birthday=" + birthday + ", gender=" + gender + ", emailAddress="
+				+ emailAddress + "]";
+	}
+
+	public static List<Person> createRoster() {
         
         List<Person> roster = new ArrayList<>();
         roster.add(

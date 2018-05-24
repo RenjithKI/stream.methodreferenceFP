@@ -20,7 +20,7 @@ import java.util.function.Predicate;
  *a stream carries values from a source through a pipeline. This example creates 
  *a stream from the collection roster by invoking the method stream.
  */
-public class BulkDataOperationsExamples {
+public class BulkDataOperationsExamples2 {
     
     public static void main(String... args) {
         
@@ -45,10 +45,10 @@ public class BulkDataOperationsExamples {
         // 3. Print names of male members, forEach operation
 
         System.out.println(
-            "Male members of the collection (bulk data operations):");
+            "Male members of the collection (bulk data operations):________________");
         roster
             .stream()
-            .filter(e -> e.getGender() == Person.Sex.MALE)
+            .filter(e -> true)//e.getGender() == Person.Sex.MALE
             .forEach(e -> System.out.println(e.getName()));
             
         // 4. Print names of male members, for-each loop 
